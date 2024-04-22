@@ -1,3 +1,10 @@
+# 1.2.0
+
+## Fixed
+
+- Fixed analytics commands not showing up in command palette with latest salesforcedx-vscode extensions. This requries
+  at least version 60.7.0 of the salesforce.salesforcedx-vscode-core extension.
+
 # 1.1.0
 
 ## Added
