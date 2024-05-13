@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "publisher": "salesforce",
   "name": "@salesforce/analyticsdx-template-lint",
   "displayName": "Salesforce Analytics Template Lint",
