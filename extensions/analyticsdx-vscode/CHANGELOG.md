@@ -1,3 +1,10 @@
+# 1.2.1
+
+## Fixed
+
+- Fixed to prompt to update to v1.4.15 of the `@salesforce/analytics` cli plugin, so that analytics commands will
+  again work.
+
 # 1.2.0
 
 ## Fixed
