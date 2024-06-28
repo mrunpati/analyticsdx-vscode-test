@@ -52,7 +52,7 @@
     "nyc": "15.1.0",
     "shx": "0.3.4",
     "sinon": "17.0.1",
-    "typescript": "5.2.2"
+    "typescript": "^5.2.2"
   },
   "scripts": {
     "vscode:prepublish": "npm prune --production",
@@ -125,6 +125,10 @@
       {
         "command": "analyticsdx.template.updateFromApp",
         "title": "%analyticsdx_template_update_from_app_label%"
+      },
+      {
+        "command": "analyticsdx.create.tua.embedding.sdk",
+        "title": "%analyticsdx_create_tua_embedding_sdk_label%"
       }
     ],
     "menus": {
@@ -172,11 +176,19 @@
         {
           "command": "analyticsdx.template.updateFromApp",
           "when": "sf:project_opened"
+        },
+        {
+          "command": "analyticsdx.create.tua.embedding.sdk",
+          "when": "sf:project_opened"
         }
       ],
       "explorer/context": [
         {
           "command": "analyticsdx.dashboard.lwc.create",
+          "when": "explorerResourceIsFolder && resourceFilename == lwc && sf:project_opened"
+        },
+        {
+          "command": "analyticsdx.create.tua.embedding.sdk",
           "when": "explorerResourceIsFolder && resourceFilename == lwc && sf:project_opened"
         }
       ]

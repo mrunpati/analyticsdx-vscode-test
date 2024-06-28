@@ -13,3 +13,4 @@ export * from './deleteApp';
 export * from './deleteTemplate';
 export * from './openStudio';
 export * from './updateTemplate';
+export * from './createTuaSdk';

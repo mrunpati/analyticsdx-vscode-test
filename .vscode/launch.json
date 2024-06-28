@@ -2,6 +2,35 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Run Extension (no server)",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}",
+        "${workspaceFolder}/extensions/analyticsdx-vscode-core/src/commands/index.ts"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ],
+      "debugWebviews": true,
+      "preLaunchTask": "-templates-setup-vscode-integration"
+    },
+    {
+      "name": "Run Extension",
+      "type": "pwa-extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}",
+        "${workspaceFolder}/extensions/analyticsdx-vscode-core/src/messages"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ],
+      "debugWebviews": true,
+      "trace": true,
+      "preLaunchTask": "analyticsdx-vscode-templates-setup-vscode-integration"
+    },
+    {
       "type": "node",
       "request": "attach",
       "protocol": "legacy",

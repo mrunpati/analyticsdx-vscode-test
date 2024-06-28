@@ -6,11 +6,14 @@
     "url": "git+https://github.com/forcedotcom/analyticsdx-vscode.git"
   },
   "engines": {
-    "node": ">=18.15.0"
+    "node": ">=18.15.0",
+    "vscode": "^1.89.0"
   },
   "dependencies": {
+    "child_process": "^1.0.2",
     "node": "^18.15.0",
-    "npm": "^6"
+    "npm": "^6",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "@salesforce/dev-config": "1.5.0",

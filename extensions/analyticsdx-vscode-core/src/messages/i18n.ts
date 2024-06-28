@@ -31,6 +31,9 @@ export const messages = Object.freeze({
   create_dashboard_lwc_has_step: 'With attached step',
   create_dashboard_lwc_no_has_step: 'Without attached step',
 
+  // commands/createTuaSdk.ts
+  create_tua_embedding_sdk_name: 'SFDX: Create TUA Embedded SDK Template',
+
   // commands/createTemplate.ts
   create_template_cmd_message: 'Creating template from analytics app...',
   create_template_cmd_no_templates_message: 'No un-templatized apps available in org.',

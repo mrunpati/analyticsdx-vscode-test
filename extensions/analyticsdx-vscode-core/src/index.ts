@@ -18,7 +18,8 @@ import {
   openDataManager,
   openStudio,
   updateTemplate,
-  updateTemplateFromApp
+  updateTemplateFromApp,
+  createTUASdk
 } from './commands';
 import { EXTENSION_NAME } from './constants';
 import { telemetryService } from './telemetry';
@@ -68,7 +69,8 @@ export async function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerCommand('analyticsdx.template.updateFromApp', updateTemplateFromApp),
     // Note: analyticsdx.telemetry.send is intentionally not listed in package.json; it's only for extension
     // code to call
-    vscode.commands.registerCommand('analyticsdx.telemetry.send', sendTelemetryCommand)
+    vscode.commands.registerCommand('analyticsdx.telemetry.send', sendTelemetryCommand),
+    vscode.commands.registerCommand('analyticsdx.create.tua.embedding.sdk', createTUASdk)
   );
 
   checkAnalyticsSfdxPlugin().catch(er => console.error('Failed to check for analytics sfdx plugin:', er));
